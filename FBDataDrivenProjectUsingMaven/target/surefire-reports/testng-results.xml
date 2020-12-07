@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="16" started-at="2020-06-07T19:23:56 IST" finished-at="2020-06-07T19:23:56 IST">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="16" started-at="2020-06-07T19:23:56 IST" finished-at="2020-06-07T19:23:56 IST">
+      <class name="FB_dd_core.CoreTest">
+        <test-method status="PASS" signature="intial()[pri:0, instance:FB_dd_core.CoreTest@2ac273d3]" name="intial" is-config="true" duration-ms="24581" started-at="2020-06-07T19:23:31 IST" finished-at="2020-06-07T19:23:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intial -->
+      </class> <!-- FB_dd_core.CoreTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

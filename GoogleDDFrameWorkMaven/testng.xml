@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  
+  <!-- Done 1st Assignment and comment it -->
+  <test name="Test_GoogleProject">
+    <classes>
+   <!--    <class name="Google_Tests.TC_01_Verify_GooglePageLaunching"/>
+      <class name="Google_Tests.TC_02_Verify_GoogleApps"/>
+      <class name="Google_Tests.TC_03_VerifyAllGoogleApps_Launching"/> -->	
+       <class name="Google_Tests.TC_04_SIgnInAllGoogleApps"/>				
+      <!-- <class name="Google_Tests.TC_05_VerifyAllLanguageLinks"/>			
+     <class name="Google_Tests.TC_06_OpenCloseBrowsers"/>				
+     <class name="Google_Tests.TC_07_VerifySearchOperationProperly"/>	
+     <class name="Google_Tests.TC_08_VerifyAllGoogleProducts"/> -->			
+    <class name="Google_Tests.TC_09_VerifyLoginToGmail"/>				
+     <class name="Google_Tests.TC_10_VerifyTotalMailReceived"/>	
+    </classes>
+ </test> <!-- Test -->
+
+</suite> <!-- Suite -->

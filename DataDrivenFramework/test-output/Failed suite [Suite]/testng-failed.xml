@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Suite]]">
+  <test name="Login_Test">
+    <classes>
+      <class name="dd_tests.LoginTest"/>
+    </classes>
+  </test> <!-- Login_Test -->
+  <test name="UploadingPhoto">
+    <classes>
+      <class name="dd_tests.UploadPhotoTest"/>
+    </classes>
+  </test> <!-- UploadingPhoto -->
+  <test name="Login_Test(failed)">
+    <classes>
+      <class name="dd_tests.LoginTest">
+        <methods>
+          <include name="doLogin" invocation-numbers="0"/>
+          <include name="isSkip"/>
+        </methods>
+      </class> <!-- dd_tests.LoginTest -->
+      <class name="dd_tests.UploadPhotoTest">
+        <methods>
+          <include name="intial"/>
+          <include name="isSkip"/>
+        </methods>
+      </class> <!-- dd_tests.UploadPhotoTest -->
+    </classes>
+  </test> <!-- Login_Test(failed) -->
+  <test name="Login_Test(failed)">
+    <classes>
+      <class name="dd_tests.LoginTest">
+        <methods>
+          <include name="intial"/>
+          <include name="doLogin"/>
+        </methods>
+      </class> <!-- dd_tests.LoginTest -->
+    </classes>
+  </test> <!-- Login_Test(failed) -->
+  <test name="UploadingPhoto(failed)">
+    <classes>
+      <class name="dd_tests.UploadPhotoTest">
+        <methods>
+          <include name="Uploading_Profile_photo"/>
+        </methods>
+      </class> <!-- dd_tests.UploadPhotoTest -->
+      <class name="dd_tests.LoginTest">
+        <methods>
+          <include name="intial"/>
+        </methods>
+      </class> <!-- dd_tests.LoginTest -->
+    </classes>
+  </test> <!-- UploadingPhoto(failed) -->
+  <test name="Login_Test(failed)(failed)">
+    <classes>
+      <class name="dd_tests.LoginTest">
+        <methods>
+          <include name="intial"/>
+          <include name="doLogin"/>
+        </methods>
+      </class> <!-- dd_tests.LoginTest -->
+    </classes>
+  </test> <!-- Login_Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

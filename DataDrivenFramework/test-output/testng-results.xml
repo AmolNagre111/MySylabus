@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="21515" started-at="2020-10-06T08:52:37Z" finished-at="2020-10-06T08:52:58Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="21515" started-at="2020-10-06T08:52:37Z" finished-at="2020-10-06T08:52:58Z">
+      <class name="dd_tests.LoginTest">
+        <test-method status="PASS" signature="intial()[pri:0, instance:dd_tests.LoginTest@2c6a3f77]" name="intial" is-config="true" duration-ms="13064" started-at="2020-10-06T14:22:24Z" finished-at="2020-10-06T14:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intial -->
+        <test-method status="PASS" signature="isSkip()[pri:0, instance:dd_tests.LoginTest@2c6a3f77]" name="isSkip" is-config="true" duration-ms="150" started-at="2020-10-06T14:22:37Z" finished-at="2020-10-06T14:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSkip -->
+        <test-method status="FAIL" signature="doLogin(java.lang.String, java.lang.String)[pri:0, instance:dd_tests.LoginTest@2c6a3f77]" name="doLogin" duration-ms="21285" started-at="2020-10-06T14:22:37Z" data-provider="getData" finished-at="2020-10-06T14:22:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9.970814338E9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Amol@1988]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='u_0_b']"}
+  (Session info: chrome=85.0.4183.121)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:42:22.379Z'
+System info: host: 'NAGRE', ip: '192.168.43.141', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_71'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\Amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58774}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d25bdc49a1b06c899cc1c8ca5a0e1bad
+*** Element info: {Using=xpath, value=//input[@id='u_0_b']} expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='u_0_b']"}
+  (Session info: chrome=85.0.4183.121)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:42:22.379Z'
+System info: host: 'NAGRE', ip: '192.168.43.141', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_71'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\Amol\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58774}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d25bdc49a1b06c899cc1c8ca5a0e1bad
+*** Element info: {Using=xpath, value=//input[@id='u_0_b']} expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at dd_tests.LoginTest.doLogin(LoginTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method status="PASS" signature="QuitDriver()[pri:0, instance:dd_tests.LoginTest@2c6a3f77]" name="QuitDriver" is-config="true" duration-ms="7" started-at="2020-10-06T14:22:58Z" finished-at="2020-10-06T14:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QuitDriver -->
+      </class> <!-- dd_tests.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

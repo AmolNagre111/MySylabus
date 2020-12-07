@@ -1,0 +1,7 @@
+14:22:24,319 DEBUG devpinoyLogger:42 - Loading Config.properties file
+14:22:24,324 DEBUG devpinoyLogger:46 - Loading object.properties file
+14:22:25,807 DEBUG devpinoyLogger:49 - Loading Excel file
+14:22:31,692 DEBUG devpinoyLogger:58 - Launching Google Chrome Browser
+14:22:37,574 DEBUG devpinoyLogger:33 - Enetering Login Test and Enter Credentials
+14:22:59,002 DEBUG devpinoyLogger:83 - Sending Mail
+14:22:59,002 DEBUG devpinoyLogger:97 - Closing Browser

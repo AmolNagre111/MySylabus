@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="649366" started-at="2020-05-20T15:39:08Z" finished-at="2020-05-20T15:49:58Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="649366" started-at="2020-05-20T15:39:08Z" finished-at="2020-05-20T15:49:58Z">
+      <class name="FB_dd_tests.LoginTest">
+        <test-method status="PASS" signature="intial()[pri:0, instance:FB_dd_tests.LoginTest@3b938003]" name="intial" is-config="true" duration-ms="15376" started-at="2020-05-20T21:08:53Z" finished-at="2020-05-20T21:09:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intial -->
+        <test-method status="FAIL" signature="isSkip()[pri:0, instance:FB_dd_tests.LoginTest@3b938003]" name="isSkip" is-config="true" duration-ms="0" started-at="2020-05-20T21:09:08Z" finished-at="2020-05-20T21:09:08Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at FB_dd_util.ExcelReader.getRowCount(ExcelReader.java:48)
+	at FB_dd_util.testUtil.isExecutable(testUtil.java:38)
+	at FB_dd_tests.LoginTest.isSkip(LoginTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:656)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSkip -->
+        <test-method status="SKIP" signature="doLogin(java.lang.String, java.lang.String)[pri:0, instance:FB_dd_tests.LoginTest@3b938003]" name="doLogin" duration-ms="443" started-at="2020-05-20T21:12:53Z" data-provider="getData" finished-at="2020-05-20T21:12:54Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+Caused by: java.lang.NullPointerException
+	at FB_dd_util.ExcelReader.getRowCount(ExcelReader.java:48)
+	at FB_dd_util.testUtil.getData(testUtil.java:58)
+	at FB_dd_tests.LoginTest.getData(LoginTest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 20 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method status="SKIP" signature="QuitDriver()[pri:0, instance:FB_dd_tests.LoginTest@3b938003]" name="QuitDriver" is-config="true" duration-ms="0" started-at="2020-05-20T22:22:02Z" finished-at="2020-05-20T22:22:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QuitDriver -->
+      </class> <!-- FB_dd_tests.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

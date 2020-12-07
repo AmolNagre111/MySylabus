@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test_GoogleProject">
+    <classes>
+      <class name="Google_Tests.TC_04_SIgnInAllGoogleApps"/>
+      <class name="Google_Tests.TC_09_VerifyLoginToGmail"/>
+      <class name="Google_Tests.TC_10_VerifyTotalMailReceived"/>
+    </classes>
+  </test> <!-- Test_GoogleProject -->
+  <test name="Test_GoogleProject(failed)">
+    <classes>
+      <class name="Google_Tests.TC_04_SIgnInAllGoogleApps">
+        <methods>
+          <include name="isSkip"/>
+          <include name="intial"/>
+          <include name="QuitDriver"/>
+          <include name="VerifyGoogleLaunchingPage" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Google_Tests.TC_04_SIgnInAllGoogleApps -->
+      <class name="Google_Tests.TC_09_VerifyLoginToGmail">
+        <methods>
+          <include name="VerifyGoogleLaunchingPage" invocation-numbers="0"/>
+          <include name="isSkip"/>
+        </methods>
+      </class> <!-- Google_Tests.TC_09_VerifyLoginToGmail -->
+      <class name="Google_Tests.TC_10_VerifyTotalMailReceived">
+        <methods>
+          <include name="isSkip"/>
+          <include name="VerifyTotalNoOfEmailReceived" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Google_Tests.TC_10_VerifyTotalMailReceived -->
+    </classes>
+  </test> <!-- Test_GoogleProject(failed) -->
+</suite> <!-- Failed suite [Suite] -->
